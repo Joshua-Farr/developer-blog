@@ -1,15 +1,21 @@
-import { BlogContents } from "./BlogContent";
+import { BlogPost } from "./BlogPost";
 import { Footer } from "./Footer";
-import { Header } from "./header";
+import { Header } from "./Header";
 
 export const Blog = () => {
   return (
     <>
       <Header />
-      <BlogContents>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-        deleniti aut architecto?
-      </BlogContents>
+      <BlogPost
+        blogInfo={{
+          title: "Title",
+          subTitle: "Subtitle",
+          image:
+            "https://images.pexels.com/photos/1000366/pexels-photo-1000366.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        }}
+      >
+        THIS IS THE BLOG POST
+      </BlogPost>
       <Footer />
     </>
   );

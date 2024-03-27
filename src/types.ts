@@ -1,6 +1,5 @@
-export interface Blog {
+export interface BlogDetails {
   title: string;
   subTitle: string;
   image: string;
-  bodyContent: string;
 }
