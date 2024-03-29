@@ -8,8 +8,8 @@ const StyledHeaderWrapper = styled.div`
   justify-content: space-between;
   // border: 1px solid black;
   border-radius: 20px;
-  padding-block: 2em;
-  margin-bottom: 2em;
+  // padding-block: 2em;
+  margin-block: 2em;
 `;
 
 const HeaderText = styled.h1`
@@ -18,16 +18,16 @@ const HeaderText = styled.h1`
   margin: 0;
 
   @media screen and (max-width: 1200px) {
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
   @media screen and (max-width: 800px) {
-    font-size: 1.75rem;
+    font-size: 2.15rem;
   }
   @media screen and (max-width: 600px) {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   @media screen and (max-width: 450px) {
-    font-size: 1rem;
+    font-size: 1.75rem;
   }
 `;
 
@@ -35,13 +35,19 @@ const HeaderName = styled.h3`
   color: black;
   font-size: 1.5rem;
   margin: 0;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.25rem;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 1rem;
+  }
 `;
 
 export const Header = () => {
   return (
     <StyledHeaderWrapper>
-      <HeaderText>Developer Blog</HeaderText>
-      <HeaderName>Josh Farr</HeaderName>
+      <HeaderText>JoshFarr.dev</HeaderText>
     </StyledHeaderWrapper>
   );
 };

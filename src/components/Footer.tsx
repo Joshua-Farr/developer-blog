@@ -2,45 +2,42 @@ import styled from "styled-components";
 
 const StyledFooterWrapper = styled.div`
   display: flex;
-  color: green;
+  background-color: black;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  // border: 1px solid black;
-  border-radius: 20px;
+  border: 1px solid black;
   padding-block: 2em;
+  padding-inline: 1em;
   margin-bottom: 2em;
 `;
 
 const FooterText = styled.a`
-  color: black;
-  font-size: 2.75rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
   margin: 0;
 
   @media screen and (max-width: 1200px) {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   @media screen and (max-width: 800px) {
-    font-size: 1.75rem;
+    font-size: 2.25rem;
   }
   @media screen and (max-width: 600px) {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   @media screen and (max-width: 450px) {
-    font-size: 1rem;
+    font-size: 1.75rem;
   }
-`;
-
-const HeaderName = styled.h3`
-  color: black;
-  font-size: 1.5rem;
-  margin: 0;
 `;
 
 export const Footer = () => {
   return (
     <StyledFooterWrapper>
-      <FooterText>Developer Blog</FooterText>
+      <FooterText href="https://github.com/Joshua-Farr">
+        More here on GitHub
+      </FooterText>
     </StyledFooterWrapper>
   );
 };
