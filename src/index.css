@@ -30,6 +30,7 @@ body {
   font-family: "Lato", sans-serif;
   font-style: normal;
   color: green;
+  margin-inline: 5em;
 }
 
 h1 {
