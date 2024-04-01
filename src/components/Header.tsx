@@ -2,18 +2,24 @@ import styled from "styled-components";
 
 const StyledHeaderWrapper = styled.div`
   display: flex;
-  color: green;
+  background-color: black;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   // border: 1px solid black;
   border-radius: 20px;
-  // padding-block: 2em;
-  margin-block: 2em;
+  border: 1px solid black;
+  padding: 2em;
+  margin-bottom: 2em;
+
+  @media screen and (max-width: 450px) {
+    justify-content: center;
+    padding: 1em;
+  }
 `;
 
 const HeaderText = styled.h1`
-  color: black;
+  color: white;
   font-size: 2.75rem;
   margin: 0;
 

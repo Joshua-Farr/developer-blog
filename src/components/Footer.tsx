@@ -7,6 +7,8 @@ const StyledFooterWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   border: 1px solid black;
+  border-radius: 20px;
+  border: 1px solid black;
   padding-block: 2em;
   padding-inline: 1em;
   margin-bottom: 2em;
@@ -17,6 +19,7 @@ const FooterText = styled.a`
   font-size: 1rem;
   font-weight: 600;
   margin: 0;
+  text-decoration: none;
 
   @media screen and (max-width: 1200px) {
     font-size: 2.5rem;
@@ -36,7 +39,7 @@ export const Footer = () => {
   return (
     <StyledFooterWrapper>
       <FooterText href="https://github.com/Joshua-Farr">
-        More here on GitHub
+        Checkout more on my GitHub 🚀
       </FooterText>
     </StyledFooterWrapper>
   );
