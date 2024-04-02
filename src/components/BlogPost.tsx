@@ -10,6 +10,7 @@ interface BlogPostProps extends PropsWithChildren {
 const BlogWrapper = styled.div`
   margin-inline: 16em;
   margin-top: 5em;
+  max-width: 900px;
 
   @media screen and (max-width: 1200px) {
     margin-inline: 8em;
@@ -47,12 +48,12 @@ const BlogTitle = styled.h1`
 `;
 
 const BlogText = styled.p`
-  margin-top: 1em;
+  margin-top: 2em;
   line-height: 2rem;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 24px;
+  font-size: 1rem;
 `;
 
 export const BlogPost = ({ blogInfo, children }: BlogPostProps) => {
@@ -64,11 +65,11 @@ export const BlogPost = ({ blogInfo, children }: BlogPostProps) => {
       </div>
       <div>
         <img src={blogInfo.image} alt="" />
-        <BlogText>{children}</BlogText>
-
-        <pre>
-          <code></code>
-        </pre>
+        <BlogText>
+          {blogInfo.blogText}
+          {children}
+          {/* temp value for right now */}
+        </BlogText>
       </div>
     </BlogWrapper>
   );

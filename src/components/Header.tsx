@@ -8,7 +8,7 @@ const StyledHeaderWrapper = styled.div`
   justify-content: space-between;
   border-bottom: 1px solid #e5e7eb;
   padding: 1em;
-  margin-bottom: 2em;
+  // margin-bottom: 2em;
 
   @media screen and (max-width: 450px) {
     justify-content: center;

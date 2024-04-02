@@ -8,7 +8,7 @@ const StyledFooterWrapper = styled.div`
   justify-content: space-between;
   border: 1px solid black;
   border: 1px solid black;
-  padding-block: 2em;
+  padding-block: 1.5em;
   padding-inline: 1em;
   margin-top: 2em;
 `;
@@ -16,23 +16,10 @@ const StyledFooterWrapper = styled.div`
 const FooterText = styled.a`
   color: white;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   font-family: "Roboto", sans-serif;
   margin: 0;
   text-decoration: none;
-
-  @media screen and (max-width: 1200px) {
-    font-size: 2.5rem;
-  }
-  @media screen and (max-width: 800px) {
-    font-size: 2.25rem;
-  }
-  @media screen and (max-width: 600px) {
-    font-size: 2rem;
-  }
-  @media screen and (max-width: 450px) {
-    font-size: 1.75rem;
-  }
 `;
 
 export const Footer = () => {
