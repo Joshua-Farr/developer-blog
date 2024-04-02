@@ -7,17 +7,17 @@ const StyledFooterWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   border: 1px solid black;
-  border-radius: 20px;
   border: 1px solid black;
   padding-block: 2em;
   padding-inline: 1em;
-  margin-bottom: 2em;
+  margin-top: 2em;
 `;
 
 const FooterText = styled.a`
   color: white;
   font-size: 1rem;
   font-weight: 600;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   text-decoration: none;
 
