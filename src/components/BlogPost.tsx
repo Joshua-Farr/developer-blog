@@ -10,7 +10,7 @@ interface BlogPostProps extends PropsWithChildren {
 const BlogWrapper = styled.div`
   margin-inline: 16em;
   margin-top: 5em;
-  max-width: 900px;
+  max-width: 650px;
 
   @media screen and (max-width: 1200px) {
     margin-inline: 8em;
@@ -28,16 +28,16 @@ const BlogWrapper = styled.div`
 
 const BlogTitle = styled.h1`
   color: black;
-  font-size: 3.75rem;
+  font-size: 2.75rem;
   line-height: 1em;
-  margin-bottom: 0.25em;
+  margin-bottom: 1.25em;
   font-weight: 300;
 
   @media screen and (max-width: 1200px) {
-    font-size: 3.25rem;
+    font-size: 2.25rem;
   }
   @media screen and (max-width: 800px) {
-    font-size: 3.15rem;
+    font-size: 2.15rem;
   }
   @media screen and (max-width: 600px) {
     font-size: 2rem;
@@ -50,10 +50,10 @@ const BlogTitle = styled.h1`
 const BlogText = styled.p`
   margin-top: 2em;
   line-height: 2rem;
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 1.25rem;
 `;
 
 export const BlogPost = ({ blogInfo, children }: BlogPostProps) => {

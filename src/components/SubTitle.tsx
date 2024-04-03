@@ -4,7 +4,7 @@ const SubtitleWrapper = styled.h3`
   font-size: 1.25rem;
   font-weight: 300;
   color: #6e767d;
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
 `;
 
 export const SubTitle = () => {
